@@ -884,6 +884,7 @@ GameObject:
   - component: {fileID: 500028891}
   - component: {fileID: 500028894}
   - component: {fileID: 500028895}
+  - component: {fileID: 500028896}
   m_Layer: 0
   m_Name: Idle 0
   m_TagString: Untagged
@@ -1002,7 +1003,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1012,8 +1013,8 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!60 &500028895
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1076,6 +1077,20 @@ PolygonCollider2D:
       - {x: 0.38098443, y: 0.3149793}
       - {x: 0.20690751, y: 0.50495887}
   m_UseDelaunayMesh: 1
+--- !u!114 &500028896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500028890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c8d0895a1024145a4f52055e292602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player2DController
+  speed: 5
+  jumpForce: 450
 --- !u!1 &512153896
 GameObject:
   m_ObjectHideFlags: 0
@@ -5892,7 +5907,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
